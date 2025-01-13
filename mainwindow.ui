@@ -1,0 +1,66 @@
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Medical Image Analyzer</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget"/>
+
+  <!-- Главное меню -->
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+
+   <!-- Меню Файл -->
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="actionLoadImage"/>
+   </widget>
+
+   <!-- Меню Анализ -->
+   <widget class="QMenu" name="menuAnalyze">
+    <property name="title">
+     <string>Анализ</string>
+    </property>
+    <addaction name="actionAnalyze"/>
+   </widget>
+
+   <addaction name="menuFile"/>
+   <addaction name="menuAnalyze"/>
+  </widget>
+
+  <widget class="QStatusBar" name="statusbar"/>
+
+  <!-- Действие: Загрузить изображение -->
+  <action name="actionLoadImage">
+   <property name="text">
+    <string>Загрузить изображение</string>
+   </property>
+  </action>
+
+  <!-- Действие: Анализировать -->
+  <action name="actionAnalyze">
+   <property name="text">
+    <string>Анализировать</string>
+   </property>
+  </action>
+
+ </widget>
+</ui>
